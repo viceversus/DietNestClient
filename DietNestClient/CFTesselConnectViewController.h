@@ -12,8 +12,9 @@
 
 @interface CFTesselConnectViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
 
-@property (weak, nonatomic) IBOutlet UIButton *zeroButton;
-@property (weak, nonatomic) IBOutlet UIButton *oneButton;
+@property (weak, nonatomic) IBOutlet UIButton *startButton;
+@property (weak, nonatomic) IBOutlet UIButton *stopButton;
+@property (weak, nonatomic) IBOutlet UIButton *momentButton;
 @property (weak, nonatomic) IBOutlet UIPickerView *hourPicker;
 @property (weak, nonatomic) IBOutlet UIPickerView *minutePicker;
 @property (weak, nonatomic) IBOutlet UIPickerView *secondsPicker;

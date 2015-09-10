@@ -96,11 +96,13 @@
 
 
 - (void)triggerMotor:(int)power {
+    NSLog(@"Trigger Motor: %d", power);
     [self.peripheral writeValue:[NSData dataWithBytes:&power length:sizeof(power)] forCharacteristic:self.motorCharacteristic type:CBCharacteristicWriteWithResponse];
 }
 
 - (void)triggerMoment {
     int moment = 1;
+    NSLog(@"Trigger Moment");
     [self.peripheral writeValue:[NSData dataWithBytes:&moment length:sizeof(moment)] forCharacteristic:self.momentCharacteristic type:CBCharacteristicWriteWithResponse];
 }
 
