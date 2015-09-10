@@ -48,6 +48,10 @@ NSArray *components;
     [BTDiscovery sharedInstance];
 }
 
+-(BOOL)shouldAutorotate {
+    return NO;
+}
+
 -(void)disableMotor:(id)sender {
     [[[BTDiscovery sharedInstance] bleService] triggerMotor:0];
     [_stopButton setHidden:true];
