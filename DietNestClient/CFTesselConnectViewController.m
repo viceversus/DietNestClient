@@ -50,10 +50,16 @@ NSArray *components;
 
 -(void)disableMotor:(id)sender {
     [[[BTDiscovery sharedInstance] bleService] triggerMotor:0];
+    [_stopButton setHidden:true];
+    [_startButton setHidden:false];
+    [_momentButton setHidden:true];
 }
 
 -(void)activateMotor:(id)sender {
     [[[BTDiscovery sharedInstance] bleService] triggerMotor:1];
+    [_stopButton setHidden:false];
+    [_startButton setHidden:true];
+    [_momentButton setHidden:false];
 }
 
 -(void)triggerMoment:(id)sender {
