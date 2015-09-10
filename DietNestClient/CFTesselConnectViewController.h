@@ -9,7 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface CFTesselConnectViewController : UIViewController
-
+@property (weak, nonatomic) IBOutlet UIButton *zeroButton;
+@property (weak, nonatomic) IBOutlet UIButton *oneButton;
+@property (nonatomic, assign) BOOL isConnected;
+- (IBAction)sendZero:(id)sender;
+- (IBAction)sendOne:(id)sender;
 
 @end
 
