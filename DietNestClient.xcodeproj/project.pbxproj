@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		35E2EE2491179D363BAD62CD /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B93C9E6FC4C7B19550CD9B40 /* libPods.a */; };
+		477FADF71BA22E8D003823A7 /* Edmondsans-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 477FADF41BA22E8D003823A7 /* Edmondsans-Bold.otf */; };
+		477FADF81BA22E8D003823A7 /* Edmondsans-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 477FADF51BA22E8D003823A7 /* Edmondsans-Regular.otf */; };
+		477FADF91BA22E8D003823A7 /* KGBlessYourHeart.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 477FADF61BA22E8D003823A7 /* KGBlessYourHeart.ttf */; };
 		BE8F53FA1BA0E365001EBA32 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8F53F91BA0E365001EBA32 /* main.m */; };
 		BE8F53FD1BA0E365001EBA32 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8F53FC1BA0E365001EBA32 /* AppDelegate.m */; };
 		BE8F54001BA0E365001EBA32 /* CFTesselConnectViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8F53FF1BA0E365001EBA32 /* CFTesselConnectViewController.m */; };
@@ -31,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		477FADF41BA22E8D003823A7 /* Edmondsans-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Edmondsans-Bold.otf"; sourceTree = "<group>"; };
+		477FADF51BA22E8D003823A7 /* Edmondsans-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Edmondsans-Regular.otf"; sourceTree = "<group>"; };
+		477FADF61BA22E8D003823A7 /* KGBlessYourHeart.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGBlessYourHeart.ttf; sourceTree = "<group>"; };
 		602EE18FCB230511010DC4A5 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		A8E3807924F8BF5078329076 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		B93C9E6FC4C7B19550CD9B40 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,6 +89,16 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		477FADF31BA22E50003823A7 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				477FADF41BA22E8D003823A7 /* Edmondsans-Bold.otf */,
+				477FADF51BA22E8D003823A7 /* Edmondsans-Regular.otf */,
+				477FADF61BA22E8D003823A7 /* KGBlessYourHeart.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		B0B9374464858F13407BA26E /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +131,7 @@
 		BE8F53F61BA0E365001EBA32 /* DietNestClient */ = {
 			isa = PBXGroup;
 			children = (
+				477FADF31BA22E50003823A7 /* Fonts */,
 				BE8F53FB1BA0E365001EBA32 /* AppDelegate.h */,
 				BE8F53FC1BA0E365001EBA32 /* AppDelegate.m */,
 				BE8F54221BA0F635001EBA32 /* BTDiscovery.h */,
@@ -239,8 +256,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				477FADF71BA22E8D003823A7 /* Edmondsans-Bold.otf in Resources */,
 				BE8F54031BA0E365001EBA32 /* Main.storyboard in Resources */,
+				477FADF81BA22E8D003823A7 /* Edmondsans-Regular.otf in Resources */,
 				BE8F54081BA0E365001EBA32 /* LaunchScreen.xib in Resources */,
+				477FADF91BA22E8D003823A7 /* KGBlessYourHeart.ttf in Resources */,
 				BE8F54051BA0E365001EBA32 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
