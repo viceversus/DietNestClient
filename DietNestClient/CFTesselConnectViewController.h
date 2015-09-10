@@ -8,9 +8,16 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CFTesselConnectViewController : UIViewController
+
+
+@interface CFTesselConnectViewController : UIViewController <UIPickerViewDataSource, UIPickerViewDelegate>
+
 @property (weak, nonatomic) IBOutlet UIButton *zeroButton;
 @property (weak, nonatomic) IBOutlet UIButton *oneButton;
+@property (weak, nonatomic) IBOutlet UIPickerView *hourPicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *minutePicker;
+@property (weak, nonatomic) IBOutlet UIPickerView *secondsPicker;
+
 @property (nonatomic, assign) BOOL isConnected;
 - (IBAction)sendZero:(id)sender;
 - (IBAction)sendOne:(id)sender;
