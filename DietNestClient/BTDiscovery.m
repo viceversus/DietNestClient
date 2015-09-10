@@ -41,7 +41,7 @@
 }
 
 - (void)startScanning {
-  [self.centralManager scanForPeripheralsWithServices:@[RWT_BLE_SERVICE_UUID] options:nil];
+  [self.centralManager scanForPeripheralsWithServices:@[RWT_TESSEL_WRITE_SERVICE_UUID] options:nil];
 }
 
 #pragma mark - Custom Accessors

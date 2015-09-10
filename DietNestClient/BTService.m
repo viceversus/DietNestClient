@@ -67,7 +67,7 @@
     }
     
     for (CBService *service in services) {
-        if ([[service UUID] isEqual:RWT_BLE_SERVICE_UUID]) {
+        if ([[service UUID] isEqual:RWT_TESSEL_WRITE_SERVICE_UUID]) {
             [peripheral discoverCharacteristics:nil forService:service];
         }
     }
