@@ -25,6 +25,7 @@ static NSString* const RWT_BLE_SERVICE_CHANGED_STATUS_NOTIFICATION = @"kBLEServi
 - (void)reset;
 - (void)startDiscoveringServices;
 
-- (void)writePosition:(int)position;
+- (void)triggerMotor:(int)power;
+- (void)triggerMoment;
 
 @end

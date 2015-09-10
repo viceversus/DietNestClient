@@ -11,7 +11,8 @@
 
 @interface BTService()
 @property (strong, nonatomic) CBPeripheral *peripheral;
-@property (strong, nonatomic) CBCharacteristic *characteristic;
+@property (strong, nonatomic) CBCharacteristic *motorCharacteristic;
+@property (strong, nonatomic) CBCharacteristic *momentCharacteristic;
 @end
 
 @implementation BTService
@@ -86,15 +87,21 @@
         return ;
     }
     
-    self.characteristic = characteristics[0];
+    self.motorCharacteristic = characteristics[0];
+    self.momentCharacteristic = characteristics[1];
     
     // Send notification that Bluetooth is connected and all required characteristics are discovered
     [self sendBTServiceNotificationWithIsBluetoothConnected:YES];
 }
 
 
-- (void)writePosition:(int)position {
-    [self.peripheral writeValue:[NSData dataWithBytes:&position length:sizeof(position)] forCharacteristic:self.characteristic type:CBCharacteristicWriteWithResponse];
+- (void)triggerMotor:(int)power {
+    [self.peripheral writeValue:[NSData dataWithBytes:&power length:sizeof(power)] forCharacteristic:self.motorCharacteristic type:CBCharacteristicWriteWithResponse];
+}
+
+- (void)triggerMoment {
+    int moment = 1;
+    [self.peripheral writeValue:[NSData dataWithBytes:&moment length:sizeof(moment)] forCharacteristic:self.momentCharacteristic type:CBCharacteristicWriteWithResponse];
 }
 
 #pragma mark - CBPeripheralDelegate
