@@ -48,12 +48,16 @@ NSArray *components;
     [BTDiscovery sharedInstance];
 }
 
--(void)sendZero:(id)sender {
-    [[[BTDiscovery sharedInstance] bleService] writePosition:0];
+-(void)disableMotor:(id)sender {
+    [[[BTDiscovery sharedInstance] bleService] triggerMotor:0];
 }
 
--(void)sendOne:(id)sender {
-    [[[BTDiscovery sharedInstance] bleService] writePosition:1];
+-(void)activateMotor:(id)sender {
+    [[[BTDiscovery sharedInstance] bleService] triggerMotor:1];
+}
+
+-(void)triggerMoment:(id)sender {
+    [[[BTDiscovery sharedInstance] bleService] triggerMoment];
 }
 
 - (void)dealloc {

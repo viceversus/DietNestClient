@@ -19,8 +19,9 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *secondsPicker;
 
 @property (nonatomic, assign) BOOL isConnected;
-- (IBAction)sendZero:(id)sender;
-- (IBAction)sendOne:(id)sender;
+- (IBAction)disableMotor:(id)sender;
+- (IBAction)activateMotor:(id)sender;
+- (IBAction)triggerMoment:(id)sender;
 
 @end
 
