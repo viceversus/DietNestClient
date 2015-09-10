@@ -101,5 +101,14 @@ NSArray *components;
     return [value stringValue];
 }
 
+- (NSAttributedString *)pickerView:(UIPickerView *)pickerView attributedTitleForRow:(NSInteger)row forComponent:(NSInteger)component
+{
+    NSArray *target = components[component];
+    NSNumber *value = target[row];
+    NSAttributedString *attString = [[NSAttributedString alloc] initWithString:[value stringValue] attributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    
+    return attString;
+    
+}
 
 @end
