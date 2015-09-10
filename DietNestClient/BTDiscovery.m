@@ -32,7 +32,7 @@
 - (instancetype)init {
   self = [super init];
   if (self) {
-    dispatch_queue_t centralQueue = dispatch_queue_create("com.raywenderlich", DISPATCH_QUEUE_SERIAL);
+    dispatch_queue_t centralQueue = dispatch_queue_create("com.carbonfive", DISPATCH_QUEUE_SERIAL);
     self.centralManager = [[CBCentralManager alloc] initWithDelegate:self queue:centralQueue options:nil];
     
     self.bleService = nil;

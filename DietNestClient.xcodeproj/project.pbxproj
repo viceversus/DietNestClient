@@ -16,7 +16,6 @@
 		BE8F54081BA0E365001EBA32 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = BE8F54061BA0E365001EBA32 /* LaunchScreen.xib */; };
 		BE8F54141BA0E365001EBA32 /* DietNestClientTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8F54131BA0E365001EBA32 /* DietNestClientTests.m */; };
 		BE8F541E1BA0E79E001EBA32 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE8F541D1BA0E79E001EBA32 /* CoreBluetooth.framework */; };
-		BE8F54211BA0E95E001EBA32 /* CFTesselBluetoothManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8F54201BA0E95E001EBA32 /* CFTesselBluetoothManager.m */; };
 		BE8F54261BA0F635001EBA32 /* BTDiscovery.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8F54231BA0F635001EBA32 /* BTDiscovery.m */; };
 		BE8F54271BA0F635001EBA32 /* BTService.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8F54251BA0F635001EBA32 /* BTService.m */; };
 /* End PBXBuildFile section */
@@ -49,8 +48,6 @@
 		BE8F54121BA0E365001EBA32 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BE8F54131BA0E365001EBA32 /* DietNestClientTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DietNestClientTests.m; sourceTree = "<group>"; };
 		BE8F541D1BA0E79E001EBA32 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
-		BE8F541F1BA0E95E001EBA32 /* CFTesselBluetoothManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CFTesselBluetoothManager.h; sourceTree = "<group>"; };
-		BE8F54201BA0E95E001EBA32 /* CFTesselBluetoothManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CFTesselBluetoothManager.m; sourceTree = "<group>"; };
 		BE8F54221BA0F635001EBA32 /* BTDiscovery.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTDiscovery.h; sourceTree = "<group>"; };
 		BE8F54231BA0F635001EBA32 /* BTDiscovery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTDiscovery.m; sourceTree = "<group>"; };
 		BE8F54241BA0F635001EBA32 /* BTService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTService.h; sourceTree = "<group>"; };
@@ -124,8 +121,6 @@
 				BE8F54231BA0F635001EBA32 /* BTDiscovery.m */,
 				BE8F54241BA0F635001EBA32 /* BTService.h */,
 				BE8F54251BA0F635001EBA32 /* BTService.m */,
-				BE8F541F1BA0E95E001EBA32 /* CFTesselBluetoothManager.h */,
-				BE8F54201BA0E95E001EBA32 /* CFTesselBluetoothManager.m */,
 				BE8F53FE1BA0E365001EBA32 /* CFTesselConnectViewController.h */,
 				BE8F53FF1BA0E365001EBA32 /* CFTesselConnectViewController.m */,
 				BE8F54041BA0E365001EBA32 /* Images.xcassets */,
@@ -301,7 +296,6 @@
 				BE8F53FD1BA0E365001EBA32 /* AppDelegate.m in Sources */,
 				BE8F53FA1BA0E365001EBA32 /* main.m in Sources */,
 				BE8F54261BA0F635001EBA32 /* BTDiscovery.m in Sources */,
-				BE8F54211BA0E95E001EBA32 /* CFTesselBluetoothManager.m in Sources */,
 				BE8F54271BA0F635001EBA32 /* BTService.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

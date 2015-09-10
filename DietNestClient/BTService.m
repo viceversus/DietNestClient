@@ -32,7 +32,7 @@
 }
 
 - (void)startDiscoveringServices {
-  [self.peripheral discoverServices:@[RWT_BLE_SERVICE_UUID]];
+  [self.peripheral discoverServices:nil];
 }
 
 - (void)reset {
